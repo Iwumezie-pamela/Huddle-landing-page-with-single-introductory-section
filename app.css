@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+*{
+    margin:0 ;
+padding: 0;
+box-sizing: border-box;
+}
+
+body{
+    background-image: url(images/bg-desktop.svg);
+    background-color: hsl(257, 40%, 49%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-size: 18px;
+  font-family: 'Open Sans',sans-serif;
+}
+
+.container{
+    display: flex;
+    align-items: flex-start;
+    justify-content:center;
+    flex-direction: row;
+padding:0 4em;
+
+}
+
+.logo{
+   margin:2.5em 0 4.5em 4em;
+   
+}
+
+.logo img{
+    width: 200px;
+}
+
+.container img{
+ margin-right: 3em;
+
+}
+
+.container .description{
+    display: flex;
+   flex-direction: column; 
+    align-items: flex-start;
+    justify-content: center;
+    height: 50vh;
+}
+
+.container .description h1{
+    font-size: 2.2rem;
+color: white;
+font-family: 'Poppins',
+sans-serif;
+line-height: 1.5;
+margin-bottom: 15px;
+}
+
+.container .description p{
+    color: rgb(211, 209, 209);
+    margin-bottom: 25px;
+}
+
+.container button{
+padding:1rem  4rem;
+border-radius: 35px;
+border:0;
+cursor:pointer;
+color:hsl(257, 40%, 49%);
+font-size: 18px;
+transition: all 0.3s ease-in-out;
+}
+
+.container button:hover{
+    background-color: hsl(300, 69%, 71%);
+    color: white;
+}
+
+.socials{
+display: flex;
+align-items:center;
+justify-content: flex-end;
+padding:0 4.5rem;
+margin: 0 auto;
+}
+
+.socials a i{
+color: #fff;
+font-size: 1.3rem;
+position: relative;
+}
+
+.socials a:not(:first-child){
+margin-left: 2rem;
+
+}
+
+.socials a .fab::after{
+    content: "";
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    border: 2px solid white;
+    border-radius: 50%;
+    left: -13px;
+    bottom: -10px;
+    transition: all .3s ease-in-out;
+}
+
+.socials a:nth-child(2){
+    margin-left: 2.4rem;
+}
+
+.socials a i:hover{
+    color: hsl(300, 69%, 71%);
+}
+
+.socials a i:hover::after{
+    border-color:hsl(300, 69%, 71%); ;
+}
+
+@media(max-width:992px){
+body {
+    background-image: url(images/bg-mobile.svg);
+    background-color: hsl(257, 40%, 49%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: 'Open Sans', sans-serif;
+    height: 100vh;
+    width: 100%;
+}
+
+.logo {
+    margin: 2rem 0 3.5rem 2rem;
+
+}
+
+.logo img {
+    width: 150px;
+}
+
+.container{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content:center;
+    padding:0 2rem;
+
+}
+
+.container img {
+ width:100%;
+ margin:0 auto;
+}
+
+.container .description h1{
+    text-align: center;
+    font-size: 25px;
+    margin:0 auto;
+}
+
+.container .description p{
+    text-align: center;
+    font-size: 16px;
+    color: rgb(245, 243, 243);
+    padding: 5px;
+    margin: 0 auto 1.4rem auto;
+    line-height: 1.5;
+}
+
+.container button {
+
+padding:0.6rem 4.5rem;
+font-size: 1rem;
+margin: 0 auto;
+}
+
+.socials{
+display: flex;
+align-items:flex-start;
+justify-content: center;
+transform: scale(0.7);
+}
+
+.socials a .fab{
+margin: 0 auto 2rem 0.6rem;
+}
+
+}
